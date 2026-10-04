@@ -1,0 +1,34 @@
+{
+  "url": {
+    "discover": "https://api.themoviedb.org/3/discover/movie",
+    "details": "https://api.themoviedb.org/3/movie/{id}"
+  },
+  "parameters": {
+    "discover": {
+      "vote_count.gte": 50,
+      "include_adult": "false",
+      "include_video": "false",
+      "sort_by": "primary_release_date.asc",
+      "language": "en-US",
+      "primary_release_date": "one query per year, 2000-2024"
+    },
+    "details": {
+      "append_to_response": "keywords,credits",
+      "language": "en-US"
+    }
+  },
+  "auth": "TMDB api_key (read from .env)",
+  "num_found": 23982,
+  "time_started": "2026-10-04 20:57:39 UTC",
+  "time_ended": "2026-10-04 21:00:42 UTC",
+  "unique_movies": 23981,
+  "failed": [],
+  "parquet_shape": {
+    "movies.parquet": [
+      23981,
+      16
+    ]
+  },
+  "path_to_file": "movies.parquet",
+  "path_to_cache": "cache/"
+}
