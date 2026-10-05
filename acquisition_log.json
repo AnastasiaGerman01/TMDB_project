@@ -27,8 +27,21 @@
     "movies.parquet": [
       23981,
       16
+    ],
+    "tables/movies.parquet": [
+      23981,
+      12
+    ],
+    "tables/people.parquet": [
+      57029,
+      2
+    ],
+    "tables/credits.parquet": [
+      143613,
+      4
     ]
   },
   "path_to_file": "movies.parquet",
+  "path_to_tables": "tables/",
   "path_to_cache": "cache/"
 }
