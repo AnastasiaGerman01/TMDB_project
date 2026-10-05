@@ -58,11 +58,3 @@ Kseniia Tikhonova, Anastasiia German
 | person_id | int64 | Person id, links to people |
 | role | string | director or cast |
 | cast_order | int64 | Billing position 1–5 for cast, empty for directors |
-
-## Notes
-
-- Raw data: values are stored as returned by the API, no cleaning. Only change: release_date text → date.
-- In credits, a person listed twice for the same movie and role is kept once.
-- vote_count, vote_average and popularity are snapshots of the download date.
-- Personal data: only the TMDB id and name of directors and the top-5 cast are kept. The Parquet files
-  stay on our machines and are not submitted.
