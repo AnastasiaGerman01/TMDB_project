@@ -12,10 +12,8 @@ Kseniia Tikhonova, Anastasiia German
 
 ## Data Acquiring
 
-1. GET /discover/movie with the scope filters, sorted by primary_release_date.asc, 20 movies per page.
-   One query per year, because TMDB returns at most 500 pages per query. This gives the movie ids.
-2. GET /movie/{id} with append_to_response=keywords,credits: one request per movie gives the details,
-   keywords and credits. We keep only the directors (crew with job = Director) and the top-5 billed cast.
+1. First, we call GET /discover/movie with our scope filters, sorting the results by release date (primary_release_date.asc). Each page contains 20 movies. However, TMDB returns no more than 500 pages per query, so we run a separate query for each year to stay within that limit. As a result, this step gives us the full list of movie IDs.
+2. Next, for each movie we call GET /movie/{id} with append_to_response=keywords,credits. This way, a single request returns the movie's details, keywords and credits all at once. Finally, from the credits we keep only the directors (crew members whose job is Director) and, in addition, the top five billed cast members.
 
 ## Relations
 
