@@ -10,7 +10,8 @@
       "include_video": "false",
       "sort_by": "primary_release_date.asc",
       "language": "en-US",
-      "primary_release_date": "one query per year, 2000-2024"
+      "primary_release_date": "one query per year, 2000-2024",
+      "page_size": 20
     },
     "details": {
       "append_to_response": "keywords,credits",
@@ -19,8 +20,10 @@
   },
   "auth": "TMDB api_key (read from .env)",
   "num_found": 23982,
-  "time_started": "2026-10-04 20:57:39 UTC",
-  "time_ended": "2026-10-04 21:00:42 UTC",
+  "time_started": "2026-10-05 16:02:59 UTC",
+  "time_ended": "2026-10-05 16:03:23 UTC",
+  "downloaded_from": "2026-10-04 15:56:22 UTC",
+  "downloaded_to": "2026-10-04 20:18:03 UTC",
   "unique_movies": 23981,
   "failed": [],
   "parquet_shape": {
