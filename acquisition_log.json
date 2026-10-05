@@ -20,17 +20,13 @@
   },
   "auth": "TMDB api_key (read from .env)",
   "num_found": 23982,
-  "time_started": "2026-10-05 16:02:59 UTC",
-  "time_ended": "2026-10-05 16:03:23 UTC",
+  "time_started": "2026-10-05 16:29:06 UTC",
+  "time_ended": "2026-10-05 16:29:27 UTC",
   "downloaded_from": "2026-10-04 15:56:22 UTC",
   "downloaded_to": "2026-10-04 20:18:03 UTC",
   "unique_movies": 23981,
   "failed": [],
   "parquet_shape": {
-    "movies.parquet": [
-      23981,
-      16
-    ],
     "tables/movies.parquet": [
       23981,
       12
@@ -44,7 +40,10 @@
       4
     ]
   },
-  "path_to_file": "movies.parquet",
-  "path_to_tables": "tables/",
+  "path_to_file": [
+    "tables/movies.parquet",
+    "tables/people.parquet",
+    "tables/credits.parquet"
+  ],
   "path_to_cache": "cache/"
 }

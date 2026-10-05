@@ -43,9 +43,6 @@ Kseniia Tikhonova, Anastasiia German
 | genres | list of strings | Genre names |
 | keywords | list of strings | Keyword names |
 
-movies.parquet has the same columns plus director_ids, director_names, cast_ids and cast_names
-(lists, aligned by position).
-
 ### tables/people.parquet
 
 | Column | Type | Description |
